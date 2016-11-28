@@ -15,11 +15,17 @@ header {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 a {
   color: #890101;
   text-decoration: none;
+}
+
+.master {
+  float: none;
+  width: auto;
 }
 
 /*navbar*/
@@ -29,6 +35,14 @@ a {
   background-repeat: no-repeat;
   background-position-x: 0px;
   background-position-y: -20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bold {
+  display: block;
 }
 
 .nav ul {
@@ -61,22 +75,17 @@ a {
   font-family: sans-serif;
 }
 
-/*.logo {
-  background-image: url('../img/logo-bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}*/
 
-
-.logo {
-  margin-top: 30px;
-}
-
-.center-logo {
-  max-width: 150px;
+.logo a {
+  padding-top: 90px;
+  height: 87px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+
+ }
+
+.logo img {
+  max-width: 100%;
 }
 
 .intro-text p {
@@ -145,13 +154,92 @@ a {
   text-align: center;
   font-size: 12px;
   height: 100px;
-
 }
 
-.ornament {
+.ornament, .ornament-footer {
   background-image: url('../img/ornament.png');
   background-repeat: no-repeat;
   background-position: center;
   min-height: 40px;
   position: relative;
+}
+
+@media screen and (min-width: 600px) {
+
+.master {
+  float: left;
+}
+.logo {
+  background-image: url('../img/logo-bg.png');
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 297px;
+  width: 284px;
+}
+.logo img {
+  margin-top: 20px;
+  padding-left: 70px;
+  display: block;
+}
+
+.nav {
+  position: relative;
+  background: none;
+
+}
+
+.nav a {
+    font-family: "Book Antiqua", Palatino;
+    text-align: center;
+    font-size: 12px;
+
+  }
+
+.nav li {
+  display: block;
+  border-bottom: 1px solid;
+  border-color: #a8a4a0;
+  padding-bottom: 1em;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.nav ul {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.first {
+  float: none;
+  border-top: 1px solid;
+  border-color: #a8a4a0;
+}
+
+.last {
+  float: none;
+}
+
+.bold {
+  font-weight: bold;
+  }
+
+  .intro-text h2 {
+    font-size: 32px;
+  }
+
+.gallery-tile {
+  max-width: 30%;
+}
+
+.ornament-footer, .footer {
+  padding-left: 284px;
+}
+.gallery-title {
+  width: 40%;
+  left: 30%;
+}
 }
