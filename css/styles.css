@@ -1,5 +1,5 @@
 body {
-  font-family: 'Oranienbaum', serif;
+  font-family: "Book Antiqua", Palatino;
   background-image: url('../img/bg.png');
   margin: 0;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ header {
 }
 
 a {
-  color: #A52D13;
+  color: #890101;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ a {
   border-bottom: 1px solid;
   border-color: #a8a4a0;
   padding-bottom: 1em;
-  max-width: 33%;
+  width: 33%;
 }
 
 .first {
@@ -90,17 +90,44 @@ a {
 
 /*gallery*/
 
+.gallery-title h2 {
+  font-weight: lighter;
+}
+
+.and {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.gallery-title {
+  min-height: 40px;
+  background-image: url('../img/bg.png');
+  width: 60%;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
 .gallery-tile {
   margin: 5px;
   float: left;
   text-align: center;
-  max-width: 30%;
+  max-width: 45%;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+}
+
+.gallery-container {
+  overflow: auto;
 }
 
 .gallery img {
-  border-radius: 10px;
+  border-radius: 4px;
   max-width: 100%;
-  box-shadow: 5px 2px 0px #888888;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto 1em;
 }
 
 .name {
@@ -117,4 +144,14 @@ a {
 .footer {
   text-align: center;
   font-size: 12px;
+  height: 100px;
+
+}
+
+.ornament {
+  background-image: url('../img/ornament.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40px;
+  position: relative;
 }
