@@ -47,27 +47,25 @@ a {
 
 .nav ul {
   list-style: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
 }
 
 .nav li {
-  display: inline;
+  float: left;
   border-bottom: 1px solid;
   border-color: #a8a4a0;
   padding-bottom: 1em;
-  width: 33%;
+  width: 30%;
 }
 
 .first {
-  float: left;
+  margin-right: 3%;
 }
 
 .last {
-  float: right;
+  margin-left: 3%;
 }
 
 .nav a {
@@ -168,6 +166,7 @@ a {
 
 .master {
   float: left;
+  margin-right: 40px;
 }
 .logo {
   background-image: url('../img/logo-bg.png');
@@ -185,15 +184,13 @@ a {
 .nav {
   position: relative;
   background: none;
-
 }
 
 .nav a {
-    font-family: "Book Antiqua", Palatino;
-    text-align: center;
-    font-size: 12px;
-
-  }
+  font-family: "Book Antiqua", Palatino;
+  text-align: center;
+  font-size: 12px;
+}
 
 .nav li {
   display: block;
@@ -227,9 +224,9 @@ a {
   font-weight: bold;
   }
 
-  .intro-text h2 {
-    font-size: 32px;
-  }
+.intro-text h2 {
+  font-size: 32px;
+}
 
 .gallery-tile {
   max-width: 30%;
@@ -238,8 +235,91 @@ a {
 .ornament-footer, .footer {
   padding-left: 284px;
 }
+
 .gallery-title {
   width: 40%;
   left: 30%;
 }
+
+.gallery-tile:nth-child(3n+1){
+  clear: both;
+}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+.master {
+  position: absolute;
+  float: none;
+  width: 100%;
+}
+
+.nav {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-left: 319px;
+}
+
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.nav li {
+  float: left;
+  width: 20%;
+}
+
+.first {
+  margin-right: 5%;
+  border-top: none;
+}
+
+.last {
+  margin-left: 3%;
+}
+.gallery-tile:nth-child(3n+1){
+  clear: none;
+}
+
+.gallery-container, .footer, .intro-text  {
+  float: right;
+  width: 80%;
+}
+.intro-text {
+  margin-top: 8em;
+}
+
+.gallery-tile {
+  max-width: 15%;
+}
+/*.gallery {
+  margin-left: 5%;
+  margin-right: 5%;
+}*/
+.gallery-tile img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.ornament-footer, .footer {
+  padding-left: 0px;
+}
+
+.footer {
+  clear: both;
+  float: none;
+  margin-left: 50%;
+  width: 20%;
+}
+.gallery-title {
+  width: 20%;
+  left: 40%;
+}
+
 }
